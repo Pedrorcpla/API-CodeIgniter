@@ -20,8 +20,8 @@ class Produtos extends Migration
             'description' => [
                 'type'  =>  'text',
             ],
-            'valor' => [
-                'type' => 'decimal(10,2)',
+            'price' => [
+                'type' => 'double',
             ],
         ]);
         $this->forge->addKey('id', true);
