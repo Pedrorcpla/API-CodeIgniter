@@ -12,11 +12,11 @@ class Produtos extends Seeder
         $description = ['Computador processador atom, bom, barato, automático e tecnologico.', 'Celular processador atom, bom, barato, automático e tecnologico.', 'Tablet processador atom, bom, barato, automático e tecnologico.'];
         $price = [2500, 1200, 2000];
 
-        for($x = 0; $x < 0; $x++){
+        for($x = 0; $x < 3; $x++){
             $data = [
                 'name'          => $names[$x],
                 'description'   => $description[$x],
-                'price'         => $price[$x]
+                'price'         => $price[$x],
             ];
     
             // Using Query Builder
