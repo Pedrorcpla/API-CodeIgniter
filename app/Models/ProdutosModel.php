@@ -14,4 +14,9 @@ class ProdutosModel extends Model
     {
         return $this->asArray()->where(['id'=>$id])->first();
     }
+
+    public function getProdutosHiago($limit)
+    {        
+        return $this->asArray()->findAll($limit);
+    }
 }
