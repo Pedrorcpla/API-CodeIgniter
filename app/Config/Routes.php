@@ -40,6 +40,9 @@ $routes->get('listar', 'Produtos::listar');
 $routes->get('produto/(:num)', 'Produtos::produto/$1');
 $routes->get('produtosHiago/(:num)', 'Produtos::produtosHiago/$1');
 $routes->post('gravar', 'Produtos::gravarProduto');
+$routes->delete('deletar/(:num)', 'Produtos::deletar/$1');
+$routes->put('atualizar/(:num)', 'Produtos::atualizar/$1');
+$routes->patch('atualizar/(:num)', 'Produtos::atualizar/$1');
 
 /*
  * --------------------------------------------------------------------

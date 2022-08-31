@@ -36,4 +36,13 @@ class Produtos extends ResourceController
             'price'         => $this->request->getPost('price'),
         ]);
     }
+
+    public function deletar($id){
+        $this->produtosModel->delete($id);
+    }
+
+    public function atualizar($id){
+        $data = $this->request->getJSON();
+        $this->produtosModel->update($id, $data);
+    }
 }
